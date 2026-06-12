@@ -1174,6 +1174,125 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
   .hero__scroll { display: none; }
 }
 
+/* ── Breadcrumbs (subcategory pages) ────────────────────────────────────── */
+.breadcrumb {
+  background: var(--color-crema);
+  border-bottom: 1px solid var(--color-border-soft);
+  padding: calc(var(--nav-height) + 0.75rem) 0 0.75rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: rgba(28, 17, 8, 0.55);
+}
+.breadcrumb__inner {
+  width: var(--container);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+.breadcrumb a {
+  color: rgba(28, 17, 8, 0.72);
+  transition: color var(--t-fast);
+}
+.breadcrumb a:hover { color: var(--color-ambar); }
+.breadcrumb__sep {
+  color: rgba(28, 17, 8, 0.3);
+  margin: 0 0.1rem;
+}
+.breadcrumb__current { color: var(--color-tierra); font-weight: 500; }
+@media (max-width: 768px) {
+  .breadcrumb { font-size: 0.7rem; padding-top: calc(var(--nav-height) + 0.6rem); }
+}
+
+/* When breadcrumb precedes page-hero, remove top padding on hero */
+.breadcrumb + .page-hero { padding-top: 3.5rem; }
+
+/* ── Subcategory species links (clickable, indexable) ──────────────────── */
+a.species {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+a.species:focus-visible {
+  outline: 2px solid var(--color-ambar);
+  outline-offset: 3px;
+}
+
+/* ── Species cards — Rounded pill, two variants ─────────────────────────
+   Default (.species-list)           → product subcategories (wood / ámbar)
+   .species-list--natural            → species of wood (forest / selva)
+   ────────────────────────────────────────────────────────────────────── */
+.species {
+  border-radius: 999px;
+  padding: 0.95rem 1.5rem;
+  justify-content: flex-start;
+  text-align: left;
+  transition: border-color var(--t-fast), background var(--t-fast), transform var(--t-fast), box-shadow var(--t-fast);
+}
+
+/* Default — Subcategorías de Producto (ámbar / madera) */
+.species-list:not(.species-list--natural) .species {
+  background: var(--color-crema);
+  border: 1px solid var(--color-border-soft);
+}
+.species-list:not(.species-list--natural) .species__dot {
+  background: var(--color-ambar);
+  box-shadow: 0 0 0 3px rgba(196, 154, 42, 0.12);
+}
+.species-list:not(.species-list--natural) a.species:hover {
+  border-color: var(--color-ambar);
+  background: rgba(196, 154, 42, 0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(196, 154, 42, 0.14);
+}
+.species-list:not(.species-list--natural) a.species:focus-visible {
+  outline: 2px solid var(--color-ambar);
+}
+
+/* Variant — Especies de Madera (verde selva) */
+.species-list--natural .species {
+  background: rgba(27, 67, 50, 0.05);
+  border: 1px solid rgba(27, 67, 50, 0.18);
+}
+.species-list--natural .species__dot {
+  background: var(--color-selva);
+  box-shadow: 0 0 0 3px rgba(27, 67, 50, 0.14);
+}
+.species-list--natural a.species:hover {
+  border-color: var(--color-selva);
+  background: rgba(27, 67, 50, 0.09);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.16);
+}
+.species-list--natural a.species:focus-visible {
+  outline: 2px solid var(--color-selva);
+}
+
+/* On dark backgrounds (sections with bg-azul, bg-azul-deep, etc.) — natural variant adapts */
+.on-dark .species-list--natural .species {
+  background: rgba(242, 235, 224, 0.06);
+  border-color: rgba(242, 235, 224, 0.18);
+  color: var(--color-crema);
+}
+.on-dark .species-list--natural .species__name { color: var(--color-crema); }
+.on-dark .species-list--natural .species__dot {
+  background: var(--color-ambar);
+  box-shadow: 0 0 0 3px rgba(196, 154, 42, 0.22);
+}
+.on-dark .species-list--natural a.species:hover {
+  background: rgba(196, 154, 42, 0.16);
+  border-color: var(--color-ambar);
+}
+
+/* On dark backgrounds — default variant (used in some product pages) */
+.on-dark .species-list:not(.species-list--natural) .species {
+  background: rgba(242, 235, 224, 0.06);
+  border-color: rgba(242, 235, 224, 0.18);
+  color: var(--color-crema);
+}
+.on-dark .species-list:not(.species-list--natural) .species__name { color: var(--color-crema); }
+
 /* ── Disable hover effects on touch devices (prevents stuck-hover) ──────── */
 @media (hover: none) {
   .category-card:hover img { transform: none; }

@@ -1,58 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://laislatrading.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/nosotros.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/contacto.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/terminos.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos/pisos.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos/tableros.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos/vigas.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos/muebles.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos/madera-en-bruto.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://laislatrading.com/productos/machihembrados.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Páginas principales -->
+  <url><loc>https://laislatrading.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://laislatrading.com/productos.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://laislatrading.com/nosotros.html</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/contacto.html</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/terminos.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+
+  <!-- Categorías de producto (7) -->
+  <url><loc>https://laislatrading.com/productos/pisos.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://laislatrading.com/productos/pisos-exterior.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://laislatrading.com/productos/tableros.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/productos/vigas.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/productos/muebles.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/productos/madera-en-bruto.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/productos/machihembrados.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/productos/sol-y-sombra.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Subcategorías de Pisos (6) -->
+  <url><loc>https://laislatrading.com/productos/pisos/machihembrado.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/pisos/parquet.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/pisos/parqueton.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/pisos/decking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Subcategorías de Madera en Bruto (6) -->
+  <url><loc>https://laislatrading.com/productos/bruto/encofrado.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/bruto/durmientes.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/bruto/slabs.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/bruto/troncos.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/bruto/raices.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/bruto/cuartones.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Subcategorías de Machihembrados (3) -->
+  <url><loc>https://laislatrading.com/productos/machihembrados-tipos/cielo-raso.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/machihembrados-tipos/revestimiento.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/productos/machihembrados-tipos/wall-panel.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Especies de madera (1 hub + 13 individuales) -->
+  <url><loc>https://laislatrading.com/especies.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laislatrading.com/especies/shihuahuaco.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/jatoba.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/anacaspi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/tahuari.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/tornillo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/huayruro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/mashonaste.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/congona.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/cachimbo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/quinilla.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/cumala.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/estoraque.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laislatrading.com/especies/pumaquiro.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
