@@ -1,9 +1,36 @@
 // Maderas La Isla — site interactions
 
+// === Google Ads conversion helpers ===
+// Reemplaza los valores 'AW-18189327422/XXXXX' con los labels reales
+// después de crear cada conversión en Google Ads (ver instrucciones).
+function gtagReportWhatsAppConversion() {
+  if (typeof gtag !== 'function') return;
+  gtag('event', 'conversion', {
+    send_to: 'AW-18189327422/WHATSAPP_LABEL',
+    event_category: 'lead',
+    event_label: 'whatsapp_click',
+  });
+}
+
+function gtagReportFormConversion() {
+  if (typeof gtag !== 'function') return;
+  gtag('event', 'conversion', {
+    send_to: 'AW-18189327422/FORM_LABEL',
+    event_category: 'lead',
+    event_label: 'contact_form_submit',
+  });
+}
+
 (() => {
   const navbar = document.querySelector('[data-navbar]');
   const navToggle = document.querySelector('[data-nav-toggle]');
   const navMenu = document.querySelector('[data-nav-menu]');
+
+  // Track all WhatsApp clicks across the site (FAB, footer, contact page, etc.)
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href*="wa.me"], a[href*="whatsapp.com"]');
+    if (link) gtagReportWhatsAppConversion();
+  }, true);
 
   // Scroll-based navbar style
   if (navbar) {
@@ -67,6 +94,7 @@
     const note = form.querySelector('[data-form-note]');
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      gtagReportFormConversion();
       const data = new FormData(form);
       const nombre = (data.get('nombre') || '').toString().trim();
       const proyecto = (data.get('proyecto') || '').toString().trim();
