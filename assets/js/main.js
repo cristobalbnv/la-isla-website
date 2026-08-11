@@ -6,7 +6,7 @@
 function gtagReportWhatsAppConversion() {
   if (typeof gtag !== 'function') return;
   gtag('event', 'conversion', {
-    send_to: 'AW-18189327422/WHATSAPP_LABEL',
+    send_to: 'AW-18189327422/-fz9CMiqpN8cEL64rOFD',
     event_category: 'lead',
     event_label: 'whatsapp_click',
   });
@@ -15,7 +15,7 @@ function gtagReportWhatsAppConversion() {
 function gtagReportFormConversion() {
   if (typeof gtag !== 'function') return;
   gtag('event', 'conversion', {
-    send_to: 'AW-18189327422/FORM_LABEL',
+    send_to: 'AW-18189327422/j0yvCJ3TtN8cEL64rOFD',
     event_category: 'lead',
     event_label: 'contact_form_submit',
   });
